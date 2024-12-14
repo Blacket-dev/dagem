@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Anderson - Innovative Architectural Design Solutions</title>
+    <meta name="description" content="Award-winning architect Sarah Anderson specializes in sustainable, modern architectural designs. Explore our portfolio of residential and commercial projects.">
+    <meta name="keywords" content="architecture, architectural design, sustainable architecture, modern design, residential architecture, commercial architecture">
+    <meta property="og:title" content="Sarah Anderson Architecture">
+    <meta property="og:description" content="Innovative architectural design solutions for modern living and working spaces.">
+    <meta property="og:type" content="website">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+       <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            transition: background-color 0.3s ease;
+        }
+        .navbar.scrolled {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar fixed w-full z-50 bg-gray-900 text-white transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <img src="./image/download.png" alt="Logo" class="h-12">
+                <span class="text-xl font-bold">DD Architecture</span>
+            </div>
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-blue-400">Home</a>
+                <a href="#about" class="hover:text-blue-400">About</a>
+                <a href="#portfolio" class="hover:text-blue-400">Portfolio</a>
+                <a href="#services" class="hover:text-blue-400">Services</a>
+                <a href="#testimonials" class="hover:text-blue-400">Testimonials</a>
+                <a href="#contact" class="hover:text-blue-400">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 text-white space-y-4">
+            <a href="#home" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+            <a href="#about" class="block px-4 py-2 hover:bg-gray-700">About</a>
+            <a href="#portfolio" class="block px-4 py-2 hover:bg-gray-700">Portfolio</a>
+            <a href="#services" class="block px-4 py-2 hover:bg-gray-700">Services</a>
+            <a href="#testimonials" class="block px-4 py-2 hover:bg-gray-700">Testimonials</a>
+            <a href="#contact" class="block px-4 py-2 hover:bg-gray-700">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('./image/image.png')">
+        <div class="hero-overlay text-white p-8 rounded-lg">
+            <h1 class="text-5xl font-bold mb-4">DAGEM DANEAL</h1>
+            <p class="text-xl">Innovative Architectural Design Solutions</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+<section id="about" class="py-20 px-4 md:px-8 bg-gradient-to-r from-indigo-50 via-blue-50 to-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-extrabold text-gray-800 mb-12 text-center">About Me</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- Image with Animation -->
+        <img 
+          src="./image/et.jfif" 
+          alt="Architect portrait" 
+          class="rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+        <!-- Text Content -->
+        <div class="space-y-6">
+          <p class="text-lg text-gray-700 leading-relaxed">
+            With over <span class="font-bold text-blue-600">15 years of experience</span> in architectural design, I specialize in creating <span class="italic">sustainable</span>, modern spaces that harmoniously blend form and function. My designs reflect innovative principles and a deep commitment to environmental sustainability.
+          </p>
+          <div class="grid grid-cols-2 gap-6">
+            <!-- Feature Card 1 -->
+            <div class="p-6 bg-white rounded-lg shadow-lg transform transition duration-500 hover:shadow-2xl">
+              <i data-lucide="pen-tool" class="w-8 h-8 text-blue-600 mb-3"></i>
+              <h3 class="text-lg font-semibold text-gray-800">Design Excellence</h3>
+              <p class="text-sm text-gray-600 mt-2">Award-winning architectural designs tailored to client needs.</p>
+            </div>
+            <!-- Feature Card 2 -->
+            <div class="p-6 bg-white rounded-lg shadow-lg transform transition duration-500 hover:shadow-2xl">
+              <i data-lucide="compass" class="w-8 h-8 text-blue-600 mb-3"></i>
+              <h3 class="text-lg font-semibold text-gray-800">Innovation</h3>
+              <p class="text-sm text-gray-600 mt-2">Crafting cutting-edge solutions for modern living.</p>
+            </div>
+          </div>
+          <!-- Call-to-action -->
+          <a href="#portfolio" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-blue-700 hover:shadow-xl transition">
+            Explore My Projects
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Modern Minimalist House" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-semibold mb-2">Modern Minimalist House</h3>
+                            <p class="text-sm">Contemporary residential design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Urban Office Complex" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-semibold mb-2">Urban Office Complex</h3>
+                            <p class="text-sm">Commercial architecture</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Sustainable Community Center" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-semibold mb-2">Sustainable Community Center</h3>
+                            <p class="text-sm">Public space design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-4 md:px-8 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center">Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-white rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <i data-lucide="building-2" class="w-12 h-12 mx-auto text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Architectural Design</h3>
+                    <p class="text-gray-600">Complete architectural design services for residential and commercial projects</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <i data-lucide="users" class="w-12 h-12 mx-auto text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Consultation</h3>
+                    <p class="text-gray-600">Expert consultation for project planning and feasibility studies</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <i data-lucide="message-square" class="w-12 h-12 mx-auto text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Project Management</h3>
+                    <p class="text-gray-600">End-to-end project management and supervision services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center">Client Testimonials</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i data-lucide="quote" class="w-10 h-10 text-blue-600 mb-4"></i>
+                    <p class="text-gray-600 mb-6">dagem's innovative approach to our office redesign project exceeded all expectations. His attention to detail and sustainable design practices created a space that truly inspires creativity.</p>
+                    <div class="flex items-center">
+                        <img src="./image/mg (1).jpg"
+                            alt="John Smith" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">mesgana belay</h4>
+                            <p class="text-sm text-gray-600">CEO, Modern Living Spaces</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i data-lucide="quote" class="w-10 h-10 text-blue-600 mb-4"></i>
+                    <p class="text-gray-600 mb-6">Working with dagem was an absolute pleasure. he transformed our vision into reality while maintaining perfect balance between aesthetics and functionality.</p>
+                    <div class="flex items-center">
+                        <img src="./image/mg (3).jpg"
+                            alt="Emma Davis" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">berhanu nega</h4>
+                            <p class="text-sm text-gray-600">Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i data-lucide="quote" class="w-10 h-10 text-blue-600 mb-4"></i>
+                    <p class="text-gray-600 mb-6">dagem expertise in sustainable architecture helped us achieve LEED certification while creating stunning spaces that our clients love.</p>
+                    <div class="flex items-center">
+                        <img src="./image/mg (2).jpg"
+                            alt="Michael Chen" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">ismail bulo</h4>
+                            <p class="text-sm text-gray-600">Property Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 md:px-8 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center">Get in Touch</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i data-lucide="mail" class="w-6 h-6 text-blue-600 mr-3"></i>
+                            <span>architecture@gmail.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-lucide="phone" class="w-6 h-6 text-blue-600 mr-3"></i>
+                            <span>+251955412217</span>
+                        </div>
+                        <div class="flex space-x-4 mt-6">
+                            <a href="#" class="text-gray-600 hover:text-blue-600">
+                                <i data-lucide="linkedin" class="w-6 h-6"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-blue-600">
+                                <i data-lucide="telegram" class="w-6 h-6"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <form id="contact-form" class="space-y-4">
+                    <input type="hidden" name="access_key" value="ba5790bf-739e-46af-9cb9-a9069d00c901">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                        <input type="text" name="name" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                        <input type="email" name="email" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                        <textarea name="message" rows="4" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">
+                        Send Message
+                    </button>
+                    <p id="success-message" class="hidden text-green-600 text-center mt-4">Message sent successfully!</p>
+                </form>
+            </div>
+        </section>
+    
+        <script>
+            document.getElementById('contact-form').addEventListener('submit', async function(event) {
+                event.preventDefault();
+    
+                const form = event.target;
+                const formData = new FormData(form);
+    
+                try {
+                    const response = await fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        body: formData
+                    });
+    
+                    if (response.ok) {
+                        document.getElementById('success-message').classList.remove('hidden');
+                        form.reset();
+                    } else {
+                        console.error('Error submitting form');
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                }
+            });
+    
+            document.getElementById('mobile-menu-button').addEventListener('click', () => {
+                const mobileMenu = document.getElementById('mobile-menu');
+                mobileMenu.classList.toggle('hidden');
+            });
+        </script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-e9edde text-black py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <!-- Column 1 - About -->
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold mb-4">.style</h3>
+                    <p class="text-gray-400 text-sm">
+                        Sustainable lifestyle choices to make life more conscious and mindful. Minimalism is the key to better living.
+                    </p>
+                </div>
+
+                <!-- Column 2 - Office -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold mb-4">Office</h3>
+                    <div class="space-y-2 text-gray-400 text-sm">
+                        <p>ethiopia Office</p>
+                        <p>piasa Street</p>
+                        <p>architecture@style.com</p>
+                        <p>+251955412217</p>
+                    </div>
+                </div>
+
+                <!-- Column 3 - Links -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold mb-4">Links</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#home" class="footer-link">Home</a></li>
+                        <li><a href="#about" class="footer-link">About</a></li>
+                        <li><a href="#portfolio" class="footer-link">Projects</a></li>
+                        <li><a href="#services" class="footer-link">Features</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 - Newsletter -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+                    <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4">
+                        <input 
+                            type="email" 
+                            name="email"
+                            placeholder="Enter your email" 
+                            class="newsletter-input w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#e94560]"
+                            required
+                        >
+                        <button 
+                            type="submit"
+                            class="bg-[#e94560] text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition-colors w-full"
+                        >
+                            Subscribe
+                        </button>
+                    </form>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="social-icon text-gray-400 hover:text-white">
+                            <i data-lucide="facebook" class="w-6 h-6"></i>
+                        </a>
+                        <a href="#" class="social-icon text-gray-400 hover:text-white">
+                            <i data-lucide="twitter" class="w-6 h-6"></i>
+                        </a>
+                        <a href="#" class="social-icon text-gray-400 hover:text-white">
+                            <i data-lucide="instagram" class="w-6 h-6"></i>
+                        </a>
+                        <a href="#" class="social-icon text-gray-400 hover:text-white">
+                            <i data-lucide="youtube" class="w-6 h-6"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
+                <p>© 2024 .style - All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Navbar scroll effect
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+                navbar.querySelectorAll('a').forEach(link => {
+                    link.classList.remove('text-white');
+                    link.classList.add('text-gray-700');
+                });
+            } else {
+                navbar.classList.remove('scrolled');
+                navbar.querySelectorAll('a').forEach(link => {
+                    link.classList.add('text-white');
+                    link.classList.remove('text-gray-700');
+                });
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
