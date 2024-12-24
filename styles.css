@@ -110,15 +110,14 @@
             transition: background-color 0.3s ease;
           }
           
-  /* Base Styles */
-
+  /* Navbar Styles */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 50;
-    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
-    backdrop-filter: blur(10px); /* Frosted glass effect */
+    background: rgba(255, 255, 255, 0.2); /* Transparent glass effect */
+    backdrop-filter: blur(10px); /* Frosted glass */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     color: #fff;
     display: flex;
@@ -129,7 +128,7 @@
 }
 
 .navbar.scrolled {
-    background: rgba(255, 255, 255, 0.9); /* Opaque white on scroll */
+    background: rgba(255, 255, 255, 0.8); /* Slightly opaque on scroll */
     color: #000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -155,7 +154,7 @@
     margin-right: 10px;
 }
 
-/* Desktop and Mobile Menus */
+/* Desktop Menu */
 .desktop-menu {
     display: none;
 }
@@ -167,11 +166,12 @@
     color: inherit;
 }
 
+/* Mobile Menu */
 .mobile-menu {
     display: none;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.8); /* Glass-like dark background */
-    backdrop-filter: blur(8px); /* Frosted glass effect */
+    background: rgba(0, 0, 0, 0.8); /* Transparent black for mobile menu */
+    backdrop-filter: blur(8px);
     position: absolute;
     top: 60px;
     right: 20px;
@@ -213,4 +213,5 @@
         display: block;
     }
 }
+
 
