@@ -111,13 +111,38 @@
           }
           
   /* Base Styles */
+
 .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.9); /* Opaque white on scroll */
+    color: #000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    text-decoration: none;
+    margin: 0 0.5rem;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #007BFF;
 }
 
 .navbar .logo {
@@ -130,38 +155,55 @@
     margin-right: 10px;
 }
 
-.navbar .desktop-menu {
-    display: flex;
-    gap: 20px;
-}
-
-.navbar .desktop-menu a,
-.navbar .mobile-menu a {
-    color: #fff;
-    text-decoration: none;
+/* Desktop and Mobile Menus */
+.desktop-menu {
+    display: none;
 }
 
 .menu-button {
     display: none;
     font-size: 24px;
     cursor: pointer;
-    color: #fff; 
+    color: inherit;
 }
 
-/* Mobile Menu */
 .mobile-menu {
     display: none;
     flex-direction: column;
-    gap: 10px;
-    background-color: #444;
+    background: rgba(0, 0, 0, 0.8); /* Glass-like dark background */
+    backdrop-filter: blur(8px); /* Frosted glass effect */
     position: absolute;
     top: 60px;
     right: 20px;
+    width: 200px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu a {
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.mobile-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Responsive Styles */
+@media (min-width: 768px) {
+    .desktop-menu {
+        display: flex;
+        gap: 20px;
+    }
+
+    .menu-button, .mobile-menu {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     .desktop-menu {
         display: none;
@@ -171,3 +213,4 @@
         display: block;
     }
 }
+
