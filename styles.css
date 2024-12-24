@@ -116,8 +116,8 @@
     top: 0;
     width: 100%;
     z-index: 50;
-    background: rgba(255, 255, 255, 0.2); /* Transparent glass effect */
-    backdrop-filter: blur(10px); /* Frosted glass */
+    background: rgba(255, 255, 255, 0.2); /* Transparent background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     color: #fff;
     display: flex;
@@ -144,23 +144,8 @@
     color: #007BFF;
 }
 
-.navbar .logo {
-    display: flex;
-    align-items: center;
-}
-
-.navbar .logo img {
-    height: 40px;
-    margin-right: 10px;
-}
-
-/* Desktop Menu */
-.desktop-menu {
-    display: none;
-}
-
 .menu-button {
-    display: none;
+    display: block;
     font-size: 24px;
     cursor: pointer;
     color: inherit;
@@ -212,6 +197,13 @@
     .menu-button {
         display: block;
     }
-}
 
+    .mobile-menu.hidden {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+}
 
