@@ -3,110 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DAGEM DANIEL- Innovative Architectural Design Solutions</title>
-    <meta name="description" content="Award-winning architect DAGEM DANEAL specializes in sustainable, modern architectural designs. Explore our portfolio of residential and commercial projects.">
+    <title>DAGEM DANIEL - Innovative Architectural Design Solutions</title>
+    <meta name="description" content="Award-winning architect DAGEM DANIEL specializes in sustainable, modern architectural designs. Explore our portfolio of residential and commercial projects.">
     <meta name="keywords" content="architecture, architectural design, sustainable architecture, modern design, residential architecture, commercial architecture">
     <meta property="og:title" content="DAGEM DANIEL Architecture">
     <meta property="og:description" content="Innovative architectural design solutions for modern living and working spaces.">
     <meta property="og:type" content="website">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-       <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        .navbar {
-            transition: background-color 0.3s ease;
-        }
-        .navbar.scrolled {
-            background-color: white;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .hero-overlay {
-            background: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(10px);
-        }
-    </style>
+    <script src="script.js"></script>
+<link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./image/download.png">
+    
+
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar fixed w-full z-50 bg-gray-900 text-white transition-all">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
-            <!-- Logo -->
-            <div class="flex items-center space-x-2">
-                <img src="./image/download.png" alt="Logo" class="h-12">
-                <span class="text-xl font-bold">DD Architecture</span>
-            </div>
-            <!-- Desktop Navigation -->
-            <div class="hidden md:flex space-x-6">
-                <a href="#home" class="hover:text-blue-400">Home</a>
-                <a href="#about" class="hover:text-blue-400">About</a>
-                <a href="#portfolio" class="hover:text-blue-400">Portfolio</a>
-                <a href="#services" class="hover:text-blue-400">Services</a>
-                <a href="#testimonials" class="hover:text-blue-400">Testimonials</a>
-                <a href="#contact" class="hover:text-blue-400">Contact</a>
-            </div>
-            <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden">
-                <i data-lucide="menu" class="w-6 h-6"></i>
-            </button>
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <img src="./image/download.png" alt="Logo">
+            <span class="font-bold">DD Architecture</span>
         </div>
+        <!-- Desktop Navigation -->
+        <div class="desktop-menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="menu-button" id="menu-button">&#9776;</div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 text-white space-y-4">
-            <a href="#home" class="block px-4 py-2 hover:bg-gray-700">Home</a>
-            <a href="#about" class="block px-4 py-2 hover:bg-gray-700">About</a>
-            <a href="#portfolio" class="block px-4 py-2 hover:bg-gray-700">Portfolio</a>
-            <a href="#services" class="block px-4 py-2 hover:bg-gray-700">Services</a>
-            <a href="#testimonials" class="block px-4 py-2 hover:bg-gray-700">Testimonials</a>
-            <a href="#contact" class="block px-4 py-2 hover:bg-gray-700">Contact</a>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header id="home" class="h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('./image/1.jpg')">
-        <div class="hero-overlay text-white p-8 rounded-lg">
-            <h1 class="text-5xl font-bold mb-4">DAGEM DANIEL</h1>
-            <p class="text-xl">Innovative Architectural Design Solutions</p>
+    <header class="hero" id="home" style="background-image: url('./image/1.jpg');">
+        <div class="hero-overlay">
+            <h1>DAGEM DANIEL</h1>
+            <p>Innovative Architectural Design Solutions</p>
         </div>
     </header>
 
     <!-- About Section -->
-<section id="about" class="py-20 px-4 md:px-8 bg-gradient-to-r from-indigo-50 via-blue-50 to-white">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-4xl font-extrabold text-gray-800 mb-12 text-center">About Me</h2>
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <!-- Image with Animation -->
-        <img 
-          src="./image/img.avif" 
-          alt="Architect portrait" 
-          class="rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
-        <!-- Text Content -->
-        <div class="space-y-6">
-          <p class="text-lg text-gray-700 leading-relaxed">
-            With over <span class="font-bold text-blue-600">15 years of experience</span> in architectural design, I specialize in creating <span class="italic">sustainable</span>, modern spaces that harmoniously blend form and function. My designs reflect innovative principles and a deep commitment to environmental sustainability.
-          </p>
-          <div class="grid grid-cols-2 gap-6">
-            <!-- Feature Card 1 -->
-            <div class="p-6 bg-white rounded-lg shadow-lg transform transition duration-500 hover:shadow-2xl">
-              <i data-lucide="pen-tool" class="w-8 h-8 text-blue-600 mb-3"></i>
-              <h3 class="text-lg font-semibold text-gray-800">Design Excellence</h3>
-              <p class="text-sm text-gray-600 mt-2">Award-winning architectural designs tailored to client needs.</p>
+    <section id="about" class="py-20 px-4 md:px-8 bg-gradient-to-r from-indigo-50 via-blue-50 to-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-extrabold text-gray-800 mb-12 text-center">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <img src="./image/img.avif" alt="Architect portrait" class="rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+                <div class="space-y-6">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        With over <span class="font-bold text-blue-600">15 years of experience</span> in architectural design, I specialize in creating <span class="italic">sustainable</span>, modern spaces that harmoniously blend form and function. My designs reflect innovative principles and a deep commitment to environmental sustainability.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="p-6 bg-white rounded-lg shadow-lg transform transition duration-500 hover:shadow-2xl">
+                            <i data-lucide="pen-tool" class="w-8 h-8 text-blue-600 mb-3"></i>
+                            <h3 class="text-lg font-semibold text-gray-800">Design Excellence</h3>
+                            <p class="text-sm text-gray-600 mt-2">Award-winning architectural designs tailored to client needs.</p>
+                        </div>
+                        <div class="p-6 bg-white rounded-lg shadow-lg transform transition duration-500 hover:shadow-2xl">
+                            <i data-lucide="compass" class="w-8 h-8 text-blue-600 mb-3"></i>
+                            <h3 class="text-lg font-semibold text-gray-800">Innovation</h3>
+                            <p class="text-sm text-gray-600 mt-2">Crafting cutting-edge solutions for modern living.</p>
+                        </div>
+                    </div>
+                    <a href="past.html" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-blue-700 hover:shadow-xl transition">
+                        Explore My Projects
+                    </a>
+                </div>
             </div>
-            <!-- Feature Card 2 -->
-            <div class="p-6 bg-white rounded-lg shadow-lg transform transition duration-500 hover:shadow-2xl">
-              <i data-lucide="compass" class="w-8 h-8 text-blue-600 mb-3"></i>
-              <h3 class="text-lg font-semibold text-gray-800">Innovation</h3>
-              <p class="text-sm text-gray-600 mt-2">Crafting cutting-edge solutions for modern living.</p>
-            </div>
-          </div>
-          <!-- Call-to-action -->
-          <a href="#portfolio" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-blue-700 hover:shadow-xl transition">
-            Explore My Projects
-          </a>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
   
     <!-- Portfolio Section -->
     <section id="portfolio" class="py-20 px-4 md:px-8">
@@ -124,7 +100,7 @@
                     </div>
                 </div>
                 <div class="project-card relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    <img src="./image/urban.jpg"
                         alt="Urban Office Complex" class="w-full h-64 object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
                         <div class="p-6 text-white">
@@ -134,7 +110,7 @@
                     </div>
                 </div>
                 <div class="project-card relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    <img src="./image/sut.jpg"
                         alt="Sustainable Community Center" class="w-full h-64 object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
                         <div class="p-6 text-white">
@@ -170,6 +146,32 @@
             </div>
         </div>
     </section>
+ <!-- Collaboration Section -->
+ <section id="collaboration" class="py-20 px-4 bg-gray-100">
+    <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl font-extrabold text-gray-800 mb-12">Collaborations</h2>
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="./image/image1.png" alt="Firm 1" class="w-full h-64 object-cover">
+                <h3 class="text-xl font-bold text-gray-800">RAAS Architects</h3>
+                <p class="text-gray-600 mt-2">Recognized for work that is anchored in traditional construction methods, local materials and indigenous craftsmanshipp>
+                <a href="https://raasarchitects.com/" target="_blank" class="text-blue-600 hover:underline mt-4 block">learn more</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="./image/aba.jfif" alt="Firm 2" class="w-full h-64 object-cover">
+                <h3 class="text-xl font-bold text-gray-800">AbbA Architects</h3>
+                <p class="text-gray-600 mt-2">A commitment to innovation and sustainability</p>
+                <a href="https://www.abbaarchitects.com.et/" target="_blank" class="text-blue-600 hover:underline mt-4 block">learn more</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="./image/big.png" alt="Firm 3" class="w-full h-64 object-cover">
+                <h3 class="text-xl font-bold text-gray-800">Bigar Architecture</h3>
+                <p class="text-gray-600 mt-2">Collaborations for sustainable architectural designs.</p>
+                <a href="https://www.bigar.net/" target="_blank" class="text-blue-600 hover:underline mt-4 block">learn more</a>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="py-20 px-4 md:px-8">
@@ -226,20 +228,13 @@
                     <div class="space-y-4">
                         <div class="flex items-center">
                             <i data-lucide="mail" class="w-6 h-6 text-blue-600 mr-3"></i>
-                            <span>architecture@gmail.com</span>
+                            <span>danielwork147@gmail.com</span>
                         </div>
                         <div class="flex items-center">
                             <i data-lucide="phone" class="w-6 h-6 text-blue-600 mr-3"></i>
                             <span>+251955412217</span>
                         </div>
-                        <div class="flex space-x-4 mt-6">
-                            <a href="#" class="text-gray-600 hover:text-blue-600">
-                                <i data-lucide="linkedin" class="w-6 h-6"></i>
-                            </a>
-                            <a href="#" class="text-gray-600 hover:text-blue-600">
-                                <i data-lucide="telegram" class="w-6 h-6"></i>
-                            </a>
-                        </div>
+                       
                     </div>
                 </div>
                 <form id="contact-form" class="space-y-4">
@@ -316,7 +311,7 @@
                     <div class="space-y-2 text-gray-400 text-sm">
                         <p>ethiopia Office</p>
                         <p>piasa Street</p>
-                        <p>architecture@style.com</p>
+                        <p>danielwork147@gmail.com</p>
                         <p>+251955412217</p>
                     </div>
                 </div>
@@ -374,38 +369,26 @@
             </div>
         </div>
     </footer>
-
-
-    <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
-
+    <script>document.addEventListener("DOMContentLoaded", () => {
         // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const menuButton = document.getElementById('menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
+    
+        menuButton.addEventListener('click', () => {
+            // Toggle 'hidden' class to show/hide mobile menu
             mobileMenu.classList.toggle('hidden');
         });
-
+    
         // Navbar scroll effect
-        const navbar = document.querySelector('.navbar');
+        const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
-                navbar.querySelectorAll('a').forEach(link => {
-                    link.classList.remove('text-white');
-                    link.classList.add('text-gray-700');
-                });
             } else {
                 navbar.classList.remove('scrolled');
-                navbar.querySelectorAll('a').forEach(link => {
-                    link.classList.add('text-white');
-                    link.classList.remove('text-gray-700');
-                });
             }
         });
-
+    
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -416,10 +399,13 @@
                         behavior: 'smooth'
                     });
                     // Close mobile menu if open
-                    mobileMenu.classList.add('hidden');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
                 }
             });
         });
+    });
     </script>
 </body>
 </html>
