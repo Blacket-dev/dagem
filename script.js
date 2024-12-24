@@ -1,7 +1,12 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const menuButton = document.getElementById("menu-button");
-    const mobileMenu = document.getElementById("mobile-menu");
-    const navbar = document.getElementById("navbar");
+document.getElementById('menu-button').addEventListener('click', () => {
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileMenu.style.display === 'flex') {
+        mobileMenu.style.display = 'none';
+    } else {
+        mobileMenu.style.display = 'flex';
+    }
+});
+
   
     // Toggle the mobile menu visibility
     menuButton.addEventListener("click", () => {
