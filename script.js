@@ -40,4 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
-  
+  document.addEventListener("DOMContentLoaded", () => {
+  lucide.createIcons();
+});
